@@ -1,0 +1,42 @@
+{
+  "name": "vite-template-solid",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "pack-src": "rimraf src.zip && jszip-cli add src/ package.json .gitignore vite.config.ts tsconfig.json tsconfig.node.json -o ./release/src.zip",
+    "pack-xpi": "web-ext build -s ./dist-firefox/ -o -a release/ -n firefox.zip",
+    "pack-zip": "rimraf extension.zip && jszip-cli add dist/ -o ./release/chrome.zip",
+    "pack-all": "rimraf release && pnpm build && pnpm pack-xpi && pnpm pack-src && pnpm pack-zip",
+    "start-firefox": "web-ext run -s ./dist",
+    "start-chromium": "web-ext run -s ./dist --target=chromium"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@crxjs/vite-plugin": "2.0.0-beta.23",
+    "@ffflorian/jszip-cli": "^3.6.2",
+    "@liuli-util/async": "^3.6.1",
+    "@liuli-util/markdown-util": "^0.8.0",
+    "@liuli-util/vite-plugin-firefox-dist": "^0.2.1",
+    "@types/quill": "^2.0.14",
+    "@types/webextension-polyfill": "^0.10.7",
+    "hast-util-from-html": "^2.0.1",
+    "hast-util-to-mdast": "^10.1.0",
+    "install": "^0.13.0",
+    "postcss": "^8.4.33",
+    "rimraf": "^5.0.5",
+    "solid-devtools": "^0.29.2",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11",
+    "vite-plugin-solid": "^2.8.2",
+    "web-ext": "^7.11.0",
+    "webextension-polyfill": "^0.10.0"
+  },
+  "dependencies": {
+    "solid-js": "^1.8.11"
+  }
+}

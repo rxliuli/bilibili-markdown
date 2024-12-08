@@ -11,11 +11,10 @@ export default defineConfig({
     name: 'Bilibili Markdown',
     description:
       '为 bilibili 专栏的新版编辑器增加粘贴 markdown 的功能，将 markdown 内容导入到专栏的编辑器中',
-    permissions: ['scripting'],
     web_accessible_resources: [
       {
         resources: ['/inject.js'],
-        matches: ['https://member.bilibili.com/read/editor/**'],
+        matches: ['<all_urls>'],
       },
     ],
   },
@@ -24,6 +23,7 @@ export default defineConfig({
       alias: {
         $lib: path.resolve('./src/lib'),
       },
+      conditions: ['browser'],
     },
     build: {
       sourcemap: true,

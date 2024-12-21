@@ -7,6 +7,7 @@ import type Quill from 'quill'
 import { toString } from 'mdast-util-to-string'
 import markdownToQuillDelta from 'markdown-to-quill-delta'
 import type { Handle } from 'markdown-to-quill-delta'
+import { serializeError } from 'serialize-error'
 
 function updateTitle(title: string) {
   // 获取 textarea 元素
@@ -68,4 +69,16 @@ export function updateFromMarkdown(content: string) {
   }
   root.children = root.children.filter((it) => it !== heading)
   updateContent(root)
+}
+
+export async function pasteMarkdown() {
+  try {
+    const text = await navigator.clipboard.readText()
+    if (!text) {
+      return
+    }
+    updateFromMarkdown(text)
+  } catch (err) {
+    alert('粘贴失败 ' + serializeError(err).message)
+  }
 }

@@ -1740,7 +1740,7 @@ packages:
     resolution: {integrity: sha512-wiYz4+JrLyb/DqW2hkFJxP7Vd7JuTDm77fvbM8VfEQdmSMqcImWeeRbHwZjBjIFki/VaMK2BhFi7oUUZeM5bqw==}
 
   markdown-to-quill-delta@file:libs/markdown-to-quill-delta-0.8.0.tgz:
-    resolution: {integrity: sha512-Xx1/c2LTICX5IjDuSYM+nrvI/5jVo+QfGIfpPQhILeJQvsVaMMUcFS+7efxmuTjJfFieBEc2hW+DprASbiaUaQ==, tarball: file:libs/markdown-to-quill-delta-0.8.0.tgz}
+    resolution: {integrity: sha512-Vq7zkmdlFadpsxRVP0bF+HwQdZ4KgX53MgSROdHRJuLuHJFei+BZJ61yyW9xtnbgiYKEvXzeLMtY3KzEYqtZxA==, tarball: file:libs/markdown-to-quill-delta-0.8.0.tgz}
     version: 0.8.0
 
   marky@1.2.5:
@@ -4398,7 +4398,6 @@ snapshots:
       mdast-util-from-markdown: 2.0.2
       mdast-util-gfm: 3.0.0
       mdast-util-to-markdown: 2.1.2
-      mdast-util-to-string: 4.0.0
       micromark-extension-gfm: 3.0.0
       quill-delta: 5.1.0
       unist-util-select: 5.1.0

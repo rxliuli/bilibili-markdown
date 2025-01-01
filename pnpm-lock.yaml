@@ -40,8 +40,8 @@ importers:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
       markdown-to-quill-delta:
-        specifier: file:libs/markdown-to-quill-delta-0.8.0.tgz
-        version: file:libs/markdown-to-quill-delta-0.8.0.tgz
+        specifier: ^1.0.0
+        version: 1.0.0
       mdast-util-gfm:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1739,9 +1739,8 @@ packages:
   markdown-table@3.0.4:
     resolution: {integrity: sha512-wiYz4+JrLyb/DqW2hkFJxP7Vd7JuTDm77fvbM8VfEQdmSMqcImWeeRbHwZjBjIFki/VaMK2BhFi7oUUZeM5bqw==}
 
-  markdown-to-quill-delta@file:libs/markdown-to-quill-delta-0.8.0.tgz:
-    resolution: {integrity: sha512-Vq7zkmdlFadpsxRVP0bF+HwQdZ4KgX53MgSROdHRJuLuHJFei+BZJ61yyW9xtnbgiYKEvXzeLMtY3KzEYqtZxA==, tarball: file:libs/markdown-to-quill-delta-0.8.0.tgz}
-    version: 0.8.0
+  markdown-to-quill-delta@1.0.0:
+    resolution: {integrity: sha512-H8g7AJQZqAGz72ElmZrXUv349s941WAVCXbqochPeJmFmNR0p0kwzVPDHuv47A+IfP+nfWDjEt84ELsfgJXScg==}
 
   marky@1.2.5:
     resolution: {integrity: sha512-q9JtQJKjpsVxCRVgQ+WapguSbKC3SQ5HEzFGPAJMStgh3QjCawp00UKv3MTTAArTmGmmPUvllHZoNbZ3gs0I+Q==}
@@ -4392,7 +4391,7 @@ snapshots:
 
   markdown-table@3.0.4: {}
 
-  markdown-to-quill-delta@file:libs/markdown-to-quill-delta-0.8.0.tgz:
+  markdown-to-quill-delta@1.0.0:
     dependencies:
       lodash-es: 4.17.21
       mdast-util-from-markdown: 2.0.2

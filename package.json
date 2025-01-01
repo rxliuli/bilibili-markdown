@@ -19,7 +19,7 @@
     "@types/mdast": "^4.0.4",
     "@wxt-dev/module-svelte": "^2.0.2",
     "autoprefixer": "^10.4.20",
-    "markdown-to-quill-delta": "file:libs/markdown-to-quill-delta-0.8.0.tgz",
+    "markdown-to-quill-delta": "^1.0.0",
     "mdast-util-gfm": "^3.0.0",
     "micromark-extension-gfm": "^3.0.0",
     "postcss": "^8.4.49",
